@@ -14,6 +14,7 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+
     },
     module: {
         rules: [
@@ -24,12 +25,19 @@ module.exports = {
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"],
+                loaders: [
+                    'style-loader',
+                    'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]&sourceMap&-minimize'
+                ]
+            },
+            {
+                test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+                use: 'url-loader?limit=100000',
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'app', 'index.html') }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
     ]
 }
