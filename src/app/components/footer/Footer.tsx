@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Component } from 'react';
-import './Footer.css';
+import * as styles from './Footer.css';
 
-export class Footer extends Component {
+export class Footer extends React.Component {
     render() {
-        return <div className="footer">
+        return <div className={styles.footer}>
 
         </div>
     }
