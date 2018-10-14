@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Home } from './components/home/home';
-import { Header } from './components/header/header';
-import { Footer } from './components/footer/footer';
+import { Home } from './components/home/Home';
+import { Header } from './components/header/Header';
+import { Footer } from './components/footer/Footer';
 import '../assets/fonts/fonts.css';
 
 ReactDOM.render(
