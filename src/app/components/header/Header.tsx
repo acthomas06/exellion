@@ -5,7 +5,6 @@ export class Header extends React.Component {
     render() {
         return <div className={styles.header}>
             <div className={styles.title}>
-                <img src="" />
             </div>
         </div>
     }
