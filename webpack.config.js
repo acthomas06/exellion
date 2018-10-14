@@ -34,6 +34,10 @@ module.exports = {
                 test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
                 use: 'url-loader?limit=100000',
             },
+            {
+                test: /\.mp4$/,
+                use: 'file-loader?name=videos/[name].[ext]',
+            },
         ],
     },
     plugins: [

@@ -2,3 +2,17 @@
     font-family: 'Abel';
     color: black;
 }
+
+.homeContainer {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.construction {
+    font-family: 'Abel';
+    font-weight: 600;
+    font-size: 56px;
+    color: white;
+    text-align: center;
+}
