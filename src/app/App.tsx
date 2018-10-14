@@ -7,9 +7,7 @@ import '../assets/fonts/fonts.css';
 
 ReactDOM.render(
     <div>
-        {/* <Header /> */}
         <Home />
-        {/* <Footer /> */}
     </div>,
     document.getElementById('root')
 );
