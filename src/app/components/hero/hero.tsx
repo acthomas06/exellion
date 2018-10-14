@@ -1,5 +1,5 @@
 import * as React from 'react'
-import * as styles from './hero.css';
+import * as styles from './Hero.css';
 
 interface IHeroProps {
     videoSrc: string;

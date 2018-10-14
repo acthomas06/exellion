@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../../../assets/videos/Logo.mp4';
 import { Hero } from '../hero/hero';
-import * as styles from './home.css';
+import * as styles from './Home.css';
 
 export class Home extends React.Component {
     public video = 'videos/Logo.mp4';
