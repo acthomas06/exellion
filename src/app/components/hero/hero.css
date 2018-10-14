@@ -1,0 +1,7 @@
+.heroVideo {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
