@@ -6,8 +6,6 @@ import { Footer } from './components/footer/Footer';
 import '../assets/fonts/fonts.css';
 
 ReactDOM.render(
-    <div>
-        <Home />
-    </div>,
+    <Home />,
     document.getElementById('root')
 );

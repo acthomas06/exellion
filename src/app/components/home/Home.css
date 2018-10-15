@@ -4,6 +4,9 @@
 }
 
 .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 100%;
     background-color: black;
@@ -15,4 +18,16 @@
     font-size: 56px;
     color: white;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .construction {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .construction {
+        font-size: 32px;
+    }
 }
