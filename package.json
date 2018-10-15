@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "react": "^16.4.1",
+    "react-device-detect": "^1.6.1",
     "react-dom": "^16.4.1"
   },
   "devDependencies": {

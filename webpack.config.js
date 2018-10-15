@@ -31,8 +31,20 @@ module.exports = {
                 ]
             },
             {
-                test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+                test: /.(woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
                 use: 'url-loader?limit=100000',
+            },
+            {
+                test: /\.(gif|png|jpg|svg)(\?.*$|$)/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10000,
+                            name: '/images/[name].[ext]',
+                        },
+                    },
+                ],
             },
             {
                 test: /\.mp4$/,
